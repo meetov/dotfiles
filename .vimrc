@@ -41,8 +41,8 @@ let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 0
 let g:syntastic_check_on_wq = 0
 
-"" airline config
-let g:airline_detect_paste=1
+"" powerline config
+set noshowmode " it is already shown by the plugin
 
 
 "" FORMATTING
@@ -62,14 +62,10 @@ set noswapfile
 
 "" STYLE
 set t_Co=256
-colo wombat256i
+colo Black
 " transparent background always
-hi Normal guibg=NONE ctermbg=NONE
-hi NonText ctermbg=none guibg=NONE
-
-" airline style
-let g:airline_theme='wombat'
-
+" hi Normal guibg=NONE ctermbg=NONE
+" hi NonText ctermbg=none guibg=NONE
 
 "" KEYBINDINGS
 " run the current file through ipython
