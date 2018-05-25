@@ -15,12 +15,11 @@ Plugin 'tmhedberg/SimpylFold'
 Plugin 'vim-syntastic/syntastic'
 Plugin 'tpope/vim-sensible'
 Plugin 'tpope/vim-fugitive'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
 Plugin 'ervandew/supertab'
 Plugin 'Vimjas/vim-python-pep8-indent'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'flazz/vim-colorschemes'
+Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
 "" to install the plugins run PluginInstall in vim
 
 call vundle#end()            " required
@@ -63,13 +62,13 @@ set noswapfile
 
 "" STYLE
 set t_Co=256
-colo Black
+colo wombat256i
 " transparent background always
 hi Normal guibg=NONE ctermbg=NONE
 hi NonText ctermbg=none guibg=NONE
 
 " airline style
-let g:airline_theme='dark_minimal'
+let g:airline_theme='wombat'
 
 
 "" KEYBINDINGS
