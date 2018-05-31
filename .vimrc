@@ -62,7 +62,7 @@ set noswapfile
 
 "" STYLE
 set t_Co=256
-colo Black
+colo eclipse
 " transparent background always
 " hi Normal guibg=NONE ctermbg=NONE
 " hi NonText ctermbg=none guibg=NONE
