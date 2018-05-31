@@ -74,7 +74,7 @@
 			},
 			"groups": {
 				"mode":               { "fg": "darkestcyan", "bg": "white", "attrs": ["bold"] },
-				"background:divider": { "fg": "darkcyan", "bg": "darkestblue", "attrs": [] }
+				"background:divider": { "fg": "gray9", "bg": "gray0", "attrs": [] }
 			}
 		},
 		"ic": {
