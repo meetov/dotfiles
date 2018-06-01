@@ -63,9 +63,6 @@ set noswapfile
 "" STYLE
 set t_Co=256
 colo distinguished
-" transparent background always
-" hi Normal guibg=NONE ctermbg=NONE
-" hi NonText ctermbg=none guibg=NONE
 
 "" KEYBINDINGS
 " run the current file through ipython
