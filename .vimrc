@@ -29,6 +29,9 @@ filetype plugin indent on    " required
 " jedi
 let g:jedi#completions_enabled = 0 " so it doesnt conflict with YCM
 
+" use the first found python binary
+let g:ycm_python_binary_path = 'python'
+
 " syntastic config
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 " set syntastic to passive (check only when invoked)
