@@ -40,5 +40,7 @@ shopt -s no_empty_cmd_completion # do not try to complete on an empty line
 # added by Anaconda3 installer
 . $HOME/miniconda3/etc/profile.d/conda.sh
 
-export PATH="$HOME/.local/bin:$HOME/miniconda3/bin/:$PATH"
+# export PATH="$HOME/.local/bin:$HOME/miniconda3/bin/:$PATH"
+# seems like conda and ycm do not work so well :(
+export PATH="$HOME/.local/bin" # for powerline
 
