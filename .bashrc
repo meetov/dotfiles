@@ -6,9 +6,7 @@
 [[ $- != *i* ]] && return
 
 # PROMPT
-PS1='[\u@\h \W]\$ '
-
-# HIST
+PS1='[\u@\h \W]\$ ' # HIST
 export HISTCONTROL=erasedups # do not keep duplicates
 export HISTSIZE=10000
 export HISTFILESIZE=100000
@@ -40,6 +38,7 @@ shopt -s cdspell # cd corrects an idiot's typing skills
 shopt -s no_empty_cmd_completion # do not try to complete on an empty line
 
 # added by Anaconda3 installer
-. /home/admin_bg/miniconda3/etc/profile.d/conda.sh
+. $HOME/miniconda3/etc/profile.d/conda.sh
 
-export PATH="/home/$USER/miniconda3/bin/:$PATH"
+export PATH="$HOME/.local/bin:$HOME/miniconda3/bin/:$PATH"
+
