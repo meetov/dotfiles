@@ -23,6 +23,13 @@ if [ -x /usr/bin/dircolors ]; then
 	alias grep='grep --color=auto'
 fi
 
+# most probably will be a 256color xterm but check in case if display and term vars are set and are okay
+if [ -n "$DISPLAY" -a "$TERM" == "xterm" ]
+then
+	export TERM=xterm-256color
+fi
+
+
 # shopt stuff
 shopt -s checkwinsize # update the values of LINES and COLUMNS if necessary after each command
 shopt -s autocd # very nice for lazy peeps
@@ -31,3 +38,8 @@ shopt -s checkjobs # check jobs before exitting
 shopt -s cmdhist # save multiline command in same history entry
 shopt -s cdspell # cd corrects an idiot's typing skills
 shopt -s no_empty_cmd_completion # do not try to complete on an empty line
+
+# added by Anaconda3 installer
+. /home/admin_bg/miniconda3/etc/profile.d/conda.sh
+
+export PATH="/home/$USER/miniconda3/bin/:$PATH"
