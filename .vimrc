@@ -51,7 +51,7 @@ let g:ycm_seed_identifiers_with_syntax=1
 " syntastic config
 let g:syntastic_mode_map = { 'mode': 'passive', 'active_filetypes': [],'passive_filetypes': [] }
 " set syntastic to passive (check only when invoked)
-let g:syntastic_python_checkers = ['pylint']
+let g:syntastic_python_checkers = ['pycodestyle']
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
@@ -63,21 +63,9 @@ let g:syntastic_check_on_wq = 0
 "" powerline config
 set noshowmode " it is already shown by the plugin
 
+set smartindent
 
-"" FORMATTING
-" removes trailing whitespaces for .py files
-autocmd BufWrite *.py :%s/\s\+$//e
-
-" shorten 4 or more newlines to just 3
-" does not completely fix style errors
-" but is visually the recommended spacing between
-" python module-level functions, classes etc.
-autocmd BufWrite *.py :%s/\n\{4,\}/\r\r\r/ge
-
-" set tabstop=4
-" set shiftwidth=4
 set noswapfile
-
 
 "" STYLE
 set t_Co=256
