@@ -22,6 +22,7 @@ Plugin 'rdnetto/YCM-Generator'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'Chiel92/vim-autoformat'
 Plugin 'powerline/powerline', {'rtp': 'powerline/bindings/vim/'}
+Plugin 'powerline/fonts'
 "" to install the plugins run PluginInstall in vim
 
 call vundle#end()            " required
